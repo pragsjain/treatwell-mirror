@@ -2,7 +2,6 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -16,14 +15,11 @@
   "name": "react-treatwell",
   "version": "1.0.0",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "npx parcel index.html",
-    "build": "parcel build index.html",
+    "build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pragati",
   "license": "ISC",
-  "description": "",
-  "homepage": "https://pragsjain.github.io/treatwell-mirror"
+  "description": ""
 }
