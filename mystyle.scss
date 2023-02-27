@@ -1,0 +1,364 @@
+*{
+    font-family: 'Circular-Loom';
+    margin: 0px;
+}
+
+.md-text{
+    font-size: 16px;
+    font-weight: 700;
+}
+.sm-text{
+    font-size: 12px;
+}
+
+.header {
+    background-size: cover;
+    padding: 120px 0px;
+    &.sticky {
+        padding: 20px 0px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+    .header-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        height: 48px;
+        margin-bottom: 48px;
+    }
+    .header-search{
+        background-origin: content-box;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        width: 40%;
+        padding: 5px;
+        border-radius: 10px;
+        height: 48px;
+
+    }
+}
+
+.appointment-section {
+    background-image: linear-gradient(#ffffff 60%,#EBEAFD  0%);
+
+    .user-appointments-section {
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        margin: auto;
+        .hey-user{
+            display: flex;
+            align-items: center;
+            .user-avatar {
+                border-radius: 50%;
+                padding: 12px;
+            }
+            .user-greeting {
+                font-weight: 700;
+                font-size: 24px;
+                color:  #071948;
+                .user-name {
+                    color: #4036ED
+                }
+            }
+        }
+        .next-appointment {
+            color:#36456B;
+            margin: 0px 12px;
+        }
+        .appointment-details-card {
+            border: 1px solid #E6E8ED;
+            border-radius: 5px;
+            background: #ffffff;
+            box-shadow: #36456B;
+            padding: 0px 12px;
+            margin: 12px;
+            .appointment-time-venue{
+                padding: 12px 0px;
+                border-bottom: 1px solid #E6E8ED;;
+                display: flex;
+                justify-content: space-between;
+                div {
+                    display: flex;
+                    align-items: center;
+                    color: #838CA3;
+                    .pay{
+                        color: #FFCB4D;
+                        font-size: 10px;
+                    }
+                    span{
+                        margin-left:8px;
+                        color: #000;
+                    }
+                }
+            }
+            .salon-details{
+                margin: 12px 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .salon-name {
+                font-weight: 700;
+            }
+            .salon-service {
+                font-size: 14px;
+                color:#838CA3 ;
+            }
+
+            .btn {
+                margin: 12px 0px;
+                border: 1px solid #E6E8ED;
+                color: #4036ED;
+                background: white;
+                border-radius: 5;
+                padding: 12px;
+                width: 100%;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.booking-section{
+    margin: 16px;
+    .heading{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #36456B;
+    }
+    .sub-heading{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #838CA3
+    }
+
+    .typesOfservice{
+        display: flex;
+        justify-content: space-between;
+        color:#B5BAC8;
+        .service{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            border-bottom: 2px solid #B5BAC8;
+            padding: 16px;
+            flex-grow: 1;
+            &.active {
+                border-bottom: 2px solid #4036ED;
+                ;
+            }
+        }
+    }
+    .salon-list{
+        display: flex;
+        overflow: scroll;
+        .salon-card{
+            width: 310px;
+            border-radius: 4px 4px 0px 0px;
+            border: 1px solid #E6E8ED;
+            margin-right:16px;
+            margin-top: 16px;
+            box-shadow: 4px 4px 4px #e6e8ed;
+            .salon-desc {
+                margin: 16px;
+                .salon-address{
+                    color: #36456B;
+                    margin-top: 16px;
+                }
+                .review-rating {
+                    margin-top: 10px;
+                }
+                .salon-rating{
+                    color: #FFB500;
+                }
+                .reviews{
+                    color: #838CA3;
+                }
+                .salon-features{
+                    display: flex;
+                    margin-top: 16px;;
+                    .btn-look {
+                        margin-right: 16px;
+                        background: #4036ED;
+                        color: white;
+                        border-radius: 50px;
+                        padding: 3px 15px;
+                        font-size: 12px;
+                        line-height: 16px;
+                        font-weight: 700;
+                    }
+                    .feature{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            margin-left: 2px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.article-section {
+    margin: 16px;
+    .article-padding{
+        height: 300px;
+    }
+    .article-descrition{
+        padding: 16px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+        .article-name {
+            color: white;
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+        .article-features{
+            display: flex;
+            margin-top: 16px;;
+            .btn-look {
+                margin-right: 16px;
+                background: #11C6CF;
+                color: white;
+                border-radius: 50px;
+                padding: 3px 15px;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 700;
+            }
+            .feature{
+                display: flex;
+                align-items: center;
+                margin-right: 16px;
+                span{
+                    margin-left: 2px;
+                    font-size: 12px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+}
+
+.footer {
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    .footer-link{
+        margin: 0px 20px;
+        color: #838CA3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transform: scale(1.2);
+            opacity: 0.5;
+        }
+        .footer-link-name{
+            font-size: 12px;
+        }
+    }
+
+}
+
+.search-page{
+    margin:16px;
+    height: 100vh;
+    position: relative;
+    .top-heading{
+        display: flex;
+        justify-content: space-between;
+    }
+    .search-services{
+        display: flex;
+        margin: 16px 0px;
+        overflow: scroll;
+        .service{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #E6E8ED;
+            margin-right: 16px;
+            color:#071948;
+            border-radius: 50px;
+            padding: 2px 12px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            flex: none;
+            div{
+                margin-left: 8px;
+            }
+        }
+    }
+    .search-detail{
+        input{
+            display: block;
+            width: 100%;
+            padding: 8px;
+            border-radius: 10px;
+            height: 48px;
+            border-color:#E6E8ED;
+            background-position-y: center;
+            background-position-x: right;
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+    }
+    .search-btn {
+        background:  #4036ED;
+        color: white;
+        border-radius: 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        border: none;
+        padding: 16px;
+    }
+}
+.error-page{
+    height: 90vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 50px 0px;
+        &.sticky {
+            padding: 16px 0px;
+        }
+        .header-search{
+            width: 80%;
+        }
+        .logo {
+            margin-bottom: 16px;
+        }
+    }
+    .appointment-section {
+        background-image: linear-gradient(#ffffff 60%,#EBEAFD  0%);
+
+        .user-appointments-section {
+            max-width: 100%;
+        }
+    }
+    .footer{
+        justify-content: space-between;
+        .footer-link{
+            margin: 0px;
+        }
+    }
+}
